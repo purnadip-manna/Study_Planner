@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.taskbar{
+    bottom: 0;
+    bottom: 0;
+    right: 1em;
+    left: 1em;
+    position: fixed;
+	display: flex;
+	align-items: center;
+	flex-direction: column; 
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: #fff;
+	-webkit-box-shadow: 20px 5px 5px 20px rgba(0,0,0,0.11);
+	box-shadow: -1px -1px 9px 9px rgb(0 0 0 / 11%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+    color: black !important;
+    background-color: #dfe4e9 !important;
+    border-color: #e5e5e5 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#navDropdown{
+	margin-left: -6rem !important;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 0px 10px 10px !important;
+	background: #fff;
+	-webkit-box-shadow: 5px 20px 20px 4px rgba(0,0,0,0.11);
+	box-shadow: 5px 20px 20px 4px rgba(0,0,0,0.11);
 }
 
-.App-link {
-  color: #61dafb;
+.profilePic{
+	height: 2rem;
+	width: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#editBtn{
+	margin-left: 136px;
+}
+
+@media only screen and (min-width: 400px) {
+	#editBtn{
+		margin-left: 190px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	#editBtn{
+		margin-left: 100px;
+	}
+}
+.card{
+	margin: 5px;
+	margin-bottom: 10px;
+}
+
+.react-calendar {
+    width: 350px;
+    max-width: 100%;
+    border: none !important;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+}
+
+#calDropdown{
+	/* margin-left: -12rem !important; */
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px !important;
+	background: #fff;
+	-webkit-box-shadow: 5px 20px 20px 4px rgba(0,0,0,0.11);
+	box-shadow: 5px 20px 20px 4px rgba(0,0,0,0.11);
+    transform: translate3d(-222px, -375px, 0px) !important;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column; 
+	justify-content: center;
+	width: 100%;
+	min-height: 100%;
+	padding: 20px;
+}
+
+.card-body{
+	border-radius: 0px 0px 5px 5px;
+}
+
+.high{
+    border-bottom: 6px solid rgb(248, 10, 121);
+}
+
+.medium{
+    border-bottom: 6px solid rgb(153, 0, 255);
+}
+
+.low{
+    border-bottom: 6px solid #2adf54;
 }

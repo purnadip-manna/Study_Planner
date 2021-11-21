@@ -1,23 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import NoteArea from './components/note';
+import Taskbar from './components/taskbar';
+import MyNavbar from './components/mynavbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyNavbar/>
+      <br/>
+      <div className="container" style={{ marginTop: "4rem", marginBottom: "5rem" }}>
+        <div className="row">
+            <div className="col-sm-6 wrapper">
+              <NoteArea 
+                pid="1"
+                title="Planning 1"
+                content="There will be details of planning..."
+                date="2021-10-01T06:17:57.980+00:00"
+                priority="high"
+              />
+            </div>
+            <div className="col-sm-6 wrapper">
+              <NoteArea 
+                pid="2"
+                title="Planning 2"
+                content="There will be details of planning..."
+                date="2021-10-01T06:17:57.980+00:00"
+                priority="low"
+              />
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-sm-6 wrapper">
+              <NoteArea 
+                pid="1"
+                title="Planning 1"
+                content="There will be details of planning..."
+                date="2021-10-01T06:17:57.980+00:00"
+                priority="high"
+              />
+            </div>
+            <div className="col-sm-6 wrapper">
+              <NoteArea 
+                pid="2"
+                title="Planning 2"
+                content="There will be details of planning..."
+                date="2021-10-01T06:17:57.980+00:00"
+                priority="medium"
+              />
+            </div>
+        </div>
+      </div>
+        <Taskbar/>
     </div>
   );
 }
