@@ -44,12 +44,12 @@ body{
 }
 
 #editBtn{
-	margin-left: 136px;
+	margin-left: 130px;
 }
 
 @media only screen and (min-width: 400px) {
 	#editBtn{
-		margin-left: 190px;
+		margin-left: 180px;
 	}
 }
 @media only screen and (max-width: 320px) {
@@ -71,13 +71,24 @@ body{
 }
 
 #calDropdown{
-	/* margin-left: -12rem !important; */
+	position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
 	-webkit-border-radius: 10px 10px 10px 10px;
 	border-radius: 10px 10px 10px 10px !important;
 	background: #fff;
 	-webkit-box-shadow: 5px 20px 20px 4px rgba(0,0,0,0.11);
 	box-shadow: 5px 20px 20px 4px rgba(0,0,0,0.11);
     transform: translate3d(-222px, -375px, 0px) !important;
+	float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 9px 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
 }
 
 .wrapper {
