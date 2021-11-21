@@ -44,7 +44,7 @@ body{
 }
 
 #editBtn{
-	margin-left: 130px;
+	margin-left: 115px;
 }
 
 @media only screen and (min-width: 400px) {
@@ -54,7 +54,7 @@ body{
 }
 @media only screen and (max-width: 320px) {
 	#editBtn{
-		margin-left: 100px;
+		margin-left: 90px;
 	}
 }
 .card{
@@ -84,7 +84,7 @@ body{
 	float: left;
     min-width: 10rem;
     padding: 0.5rem 0;
-    margin: 0.125rem 9px 0;
+    margin: 0.125rem 33px 0;
     font-size: 1rem;
     color: #212529;
     text-align: left;
