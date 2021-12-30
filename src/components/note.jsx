@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import {Card} from 'react-bootstrap';
-class NoteArea extends Component {
+class Note extends Component {
     constructor(props){
         super(props);
         this.modifyDate = (date) => {
@@ -27,4 +27,4 @@ class NoteArea extends Component {
     }
 }
  
-export default NoteArea;
+export default Note;
