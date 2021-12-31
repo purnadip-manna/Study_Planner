@@ -32,9 +32,7 @@ class NoteArea extends Component {
         );
     }
 
-
-
-    render() { 
+    render() {
         const { error, isLoaded, notes } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
@@ -44,7 +42,7 @@ class NoteArea extends Component {
             return (
               <div className="row">
                     {notes.map(note => (
-                        <div className="col-sm-6 wrapper">
+                        <div className="col-sm-6 wrapper" key={note._id}>
                             <Note
                                 pid={note._id}
                                 title={note.title}
